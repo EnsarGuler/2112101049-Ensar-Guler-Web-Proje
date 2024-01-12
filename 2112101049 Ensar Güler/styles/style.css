@@ -1,0 +1,244 @@
+
+:root{
+    --main-color: #e84242;
+    --black-color: #0e0e0e;
+    --border:0.1rem solid rgba(255,255,255,0.4)
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+
+
+
+/*! base html codes */
+
+html{
+    font-size: 62.5% ;
+    overflow-x: hidden ;
+    scroll-padding-top:9rem ;
+    scroll-behavior: smooth ;
+}
+
+body{
+    background-color: var(--main-color) ;
+}
+
+section{
+    padding: 3.5rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: white;
+    background-color: black;
+}
+
+.baslık{
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom:01.rem solid white;
+}
+
+.heading span{
+    text-transform: uppercase;
+}
+
+/*! header start */
+.logo img {
+    height: 10rem;
+}
+
+.header{
+    background-color: white;
+    display: flex;
+    align-items: center ;   
+    justify-content: space-evenly;
+    padding:0.8%;
+    margin:2rem;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    margin: 8rem;
+    font-size: 2.5rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+
+
+.header .navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+/*! header end */
+
+/*! anasayfa start */
+.anasayfa{
+    min-height: 100vh;
+    background: url(/png1/Paragraf\ metniniz.png)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -17.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.anasayfa .content{
+    max-width:60rem;
+}
+
+.anasayfa .content h3{
+    font-size: 6rem;
+}
+
+.anasayfa .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+/*! anasayfa end */
+
+/*! hizmetler başlangıç */
+.kutu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.kutu .box-container .box{
+    padding: 3rem;
+    background-color:white ;
+    border-radius:3rem ;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.kutu .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.kutu .box-container .box .hizmet-kategori{
+    font-size: 1.2rem;
+}
+
+.kutu .box-container .box h3{
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.kutu .box-container .box .metin{
+    font-size: 2rem;
+    padding: 0.5rem 0;
+}
+
+/*! hizmetler bitiş */
+.hakkında .row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.hakkında .row .image{
+    flex: 1 1 45rem;
+}
+
+.hakkında .row img{
+    width: 100½;
+}
+
+.hakkında .row .content{
+    flex: 1 1 45rem;
+}
+
+.hakkında .row .content h3{
+    font-size: 5rem;
+    color: white;
+}
+
+.hakkında .row .content p{
+    font-size: 1.6rem;
+    color: #ffffff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.iletişim .row{
+    display: flex;
+    background-color: var(--black-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.iletişim .row form{
+    flex-wrap: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.iletişim .row form h3{
+    font-size: 3.5rem;
+    color: #ffffff;
+}
+
+.iletişim .row form .inputBox{
+    display: flex;
+    align-items:center ;
+    margin: 2rem 0;
+    border: var(--border);
+}
+
+.iletişim .row form .inputBox i{
+    color: #ffffff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.iletişim .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #ffffff;
+    text-transform: none;
+    background: none;
+}
+
+
+
+
+
+footer {
+    font-size: 2rem;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
